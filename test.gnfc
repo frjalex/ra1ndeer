@@ -1,0 +1,5 @@
+a = 31+2;
+b = 45 * 7;
+c = ((a * b) + (a / b)) - 2;
+print b + c - a;
+print c;
