@@ -40,7 +40,7 @@ public class Asm1Compiler extends Asm1BaseVisitor<Integer> {
         if (memAlloc.indexOf(ctx.ID().getText()) == -1) {
             memAlloc.add(ctx.ID().getText());
         }
-        lines.add("SW 0," + rs+","+memAlloc.indexOf(ctx.ID().getText()));
+        lines.add("SW 0," + rs+","+memAlloc.indexOf(ctx.ID().getText()) * 4);
         freeReg(rs);
         return -1;
     }
@@ -80,7 +80,7 @@ public class Asm1Compiler extends Asm1BaseVisitor<Integer> {
         if (memAlloc.indexOf(ctx.ID().getText()) == -1){
             memAlloc.add(ctx.ID().getText());
         }
-        lines.add("LW " + loc+",0,"+memAlloc.indexOf(ctx.ID().getText()));
+        lines.add("LW " + loc+",0,"+memAlloc.indexOf(ctx.ID().getText()) * 4);
         return loc;
     }
 
