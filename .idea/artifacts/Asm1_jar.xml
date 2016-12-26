@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Asm1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Asm1_jar</output-path>
+    <root id="archive" name="Asm1.jar">
+      <element id="module-output" name="Asm1" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../antlr-runtime-4.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
